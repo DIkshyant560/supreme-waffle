@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>African Safari Zoo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <img src="https://i.postimg.cc/8cdHFSjb/Logo.png" alt="Logo" class="Logo-img">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="conservation.html">Conservation</a></li>
+                <li><a href="safari.html">Safari Tours</a></li>
+                <li><a href="Membership.html">Membership</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Buy Tickets</button></a>
+    </header>
+    <section class="buy-ticket-section">
+        <h1>Buy Your Ticket</h1>
+        <form class="ticket-form" action="https://esewa.com.np/epay/main" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="ticket-type">Ticket Type</label>
+                <select id="ticket-type" name="ticket_type" required>
+                    <option value="">Select ticket type</option>
+                    <option value="vip">Vip luxury Safari - $3500</option>
+                    <option value="regular">Budget Safari - $1500</option>
+                    <option value="regular">Student Group tour - $500</option>
+                    <option value="regular">Vip visit- $100</option>
+                    <option value="regular">Regular visit- $30</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Ticket Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Number of tickets" min="1" required>
+            </div>
+            <input type="hidden" name="amt" value="100">
+            <input type="hidden" name="pid" value="123456789">
+            <input type="hidden" name="su" value="http://yoursite.com/success">
+            <input type="hidden" name="fu" value="http://yoursite.com/failure">
+            
+            <button type="submit" class="buy-ticket-btn">Buy Ticket</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="https://i.postimg.cc/8cdHFSjb/Logo.png" alt="African Premium Zoo Logo">
+            <p>Experience Africa's wildlife like never before!</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>About Us</h4>
+              <ul>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="conservation.html">Conservation Efforts</a></li>
+                <li><a href="#">History & Heritage</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Plan Your Visit</h4>
+              <ul>
+                <li><a href="#">Tickets & Pricing</a></li>
+                <li><a href="#">Zoo Map</a></li>
+                <li><a href="#">Zoo Hours</a></li>
+                <li><a href="#">Group Bookings</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Experiences</h4>
+              <ul>
+                <li><a href="#">Safari Tours</a></li>
+                <li><a href="#">Animal Encounters</a></li>
+                <li><a href="#">Events & Programs</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: info@africanpremiumzoo.com</p>
+            <p>Phone: +977 9831264587</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 African Premium Zoo. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
